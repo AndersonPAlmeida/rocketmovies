@@ -1,18 +1,24 @@
 
 import { Container, Profile } from './styles';
+import { Input } from '../Input';
+import { FiSearch} from 'react-icons/fi'
 
 export function Header() {
    return (
-      <Container>
-         <h1>RocketMovies</h1>
+      <>
+         <Container>
+            <h1>RocketMovies</h1>
 
-         <Profile>
-            <div>
-               <p>Anderson Almeida</p>
-               <a>sair</a>
-            </div>
-            <img src="https://github.com/AndersonPAlmeida.png" alt="" />
-         </Profile>
-      </Container>
+            <Input icon={FiSearch} type="text" placeholder="Pesquisar pelo título"/>
+
+            <Profile>
+               <div>
+                  <p>Anderson Almeida</p>
+                  <a>sair</a>
+               </div>
+               <img src="https://github.com/AndersonPAlmeida.png" alt="" />
+            </Profile>
+         </Container>
+      </>
    );
 }
