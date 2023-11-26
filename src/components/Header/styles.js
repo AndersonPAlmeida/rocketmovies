@@ -4,7 +4,7 @@ export const Container = styled.header`
    display: flex;
    justify-content: space-between;
    align-items: center;
-   gap: 6.4rem;
+   gap: 3.5rem;
    width: 100%;
 
    border-bottom: .1rem solid #3E3B47;
@@ -23,17 +23,24 @@ export const Profile = styled.div`
    text-align: end;
    gap: 1rem;
 
-   p {
-      color: ${({ theme}) => theme.colors.white};
-      font-weight: 700;
-      font-size: 1.4rem;
+   > div {
+      display: flex;
+      flex-direction: column;
+      min-width:12.5rem;
+      span {
+         color: ${({ theme}) => theme.colors.white};
+         font-weight: 700;
+         font-size: 1.4rem;
+         display: block;
+      }
+   
+      a{
+         font-size: 1.4rem;
+         font-weight: 400;
+         color: ${({ theme}) => theme.colors.gray};
+      }
    }
 
-   a{
-      font-size: 1.4rem;
-      font-weight: 400;
-      color: ${({ theme}) => theme.colors.gray};
-   }
    > img {
       width: 6.4rem;
       height: 6.4rem;
