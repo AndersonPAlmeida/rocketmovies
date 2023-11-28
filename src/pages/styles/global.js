@@ -28,6 +28,10 @@ export default createGlobalStyle`
       text-decoration: none;
    }
 
+   button {
+      border: 0;
+   }
+   
    button, a {
       cursor: pointer;
       transition: filter 0.2s;

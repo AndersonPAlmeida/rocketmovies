@@ -1,11 +1,14 @@
 import styled from 'styled-components';
 
 export const Container = styled.header`
+   grid-area: header;
+
    display: flex;
    justify-content: space-between;
    align-items: center;
    gap: 3.5rem;
    width: 100%;
+   max-height: 11.6rem;
 
    border-bottom: .1rem solid #3E3B47;
    padding: 2.4rem 12.3rem;
