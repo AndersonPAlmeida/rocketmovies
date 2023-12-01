@@ -54,5 +54,14 @@ export const Content = styled.div`
    padding: 0 12.3rem;
    overflow-y: auto;
 
-   
+   &::-webkit-scrollbar {
+      width: .8rem;
+   }
+   &::-webkit-scrollbar-track {
+      background: transparent;
+   }
+   &::-webkit-scrollbar-thumb {
+      background: ${({ theme}) => theme.colors.pinkLight};
+      border-radius: .8rem;
+   }
 `;
