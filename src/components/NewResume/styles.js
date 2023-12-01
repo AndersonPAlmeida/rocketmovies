@@ -5,7 +5,7 @@ export const Container = styled.div`
 
    padding: 3.2rem;
    border-radius: .8rem;
-   margin-top: 5rem;
+   margin-top: 3rem;
    
    > h2 {
       font-size: 2.4rem;
@@ -17,10 +17,11 @@ export const Container = styled.div`
    }
 
    > p {
-      margin-top: 1.5rem;
+      margin: 4rem 0;
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
       color: ${({ theme}) => theme.colors.gray};
    }
+
 `;

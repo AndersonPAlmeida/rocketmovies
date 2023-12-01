@@ -53,4 +53,6 @@ export const Content = styled.div`
    grid-area: content;
    padding: 0 12.3rem;
    overflow-y: auto;
+
+   
 `;
