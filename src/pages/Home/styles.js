@@ -11,7 +11,7 @@ export const Container = styled.div`
    grid-template-areas:
       "header"
       "title"
-      "movies"
+      "content"
    ;
 `;
 export const Title = styled.div`
@@ -47,4 +47,10 @@ export const AddMovie = styled.button`
    > svg{
       margin-right: 1.6rem;
    }
+`;
+
+export const Content = styled.div`
+   grid-area: content;
+   padding: 0 12.3rem;
+   overflow-y: auto;
 `;
