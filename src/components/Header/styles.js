@@ -12,6 +12,8 @@ export const Container = styled.header`
 
    border-bottom: .1rem solid #3E3B47;
    padding: 2.4rem 12.3rem;
+   /* margin-bottom: 4rem; */
+
    > h1 {
       color: ${({ theme}) => theme.colors.pinkLight};
       font-weight: 700;

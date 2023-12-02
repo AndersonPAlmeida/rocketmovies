@@ -22,7 +22,6 @@ export const Title = styled.div`
    justify-content: space-between;
 
    padding: 0 12.3rem;
-   margin-top: 5rem;
    
    >h2 {
       font-size: 3.2rem;
@@ -38,7 +37,7 @@ export const AddMovie = styled.button`
    align-items: center;
    justify-content: center;
 
-   padding: 3.2rem;
+   padding: 3.0rem;
    height: 4.8rem;
    border-radius: .8rem;
 
