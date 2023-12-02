@@ -6,7 +6,7 @@ export const Container = styled.button`
    
    background-color: ${({theme}) => theme.colors.pinkLight};
    color: ${({theme}) => theme.colors.backgroundTags};
-
+   border-radius: 1rem;
    transition: all .5s;
 
    &:hover {

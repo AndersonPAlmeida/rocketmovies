@@ -15,7 +15,7 @@ export function Header() {
                <span>Anderson Almeida</span>
                <a>sair</a>
             </div>
-            <img src="https://github.com/AndersonPAlmeida.png" alt="" />
+            <img src="https://github.com/AndersonPAlmeida.png" alt="Foto do Usuário" />
          </Profile>
       </Container>
    );
