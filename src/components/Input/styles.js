@@ -14,7 +14,7 @@ export const Container = styled.div`
       background-color: ${({ theme}) => theme.colors.backgroundForms};
       border: none;
       border-radius: 1rem;
-      padding: 1.9rem 0.8rem;
+      padding: 1.9rem 1.6rem;
 
       color: ${({ theme}) => theme.colors.white};
 

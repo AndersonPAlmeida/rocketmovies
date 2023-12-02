@@ -1,10 +1,10 @@
 import { Container } from "./styles";
 import { FiArrowLeft } from 'react-icons/fi'
-export function ButtonText(){
+export function ButtonText({title}){
    return (
       <Container>
          <FiArrowLeft />
-         Voltar
+         {title}
       </Container>
    );
 }
