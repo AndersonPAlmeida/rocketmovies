@@ -7,6 +7,7 @@ export const Container = styled.div`
 
    background-color: ${({ theme}) => theme.colors.backgroundForms};
    border-radius: 1rem;
+   margin-bottom: .8rem;
 
    > input {
       width: 100%;
