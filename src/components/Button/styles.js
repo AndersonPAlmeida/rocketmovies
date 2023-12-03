@@ -9,12 +9,13 @@ export const Container = styled.button`
    border-radius: 1rem;
    transition: all .5s;
 
-   &:hover {
-      background-color: ${({theme}) => theme.colors.backgroundTags};
+   &:not(:disabled):hover {
+      background-color: ${({theme}) => theme.colors.black};
       color: ${({theme}) => theme.colors.pinkLight};
    }
 
    &:disabled {
       opacity: 0.5;
+      cursor: not-allowed;
    }
 `;
