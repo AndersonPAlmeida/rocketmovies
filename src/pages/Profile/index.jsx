@@ -26,7 +26,8 @@ export function Profile(){
 
             <Input icon={FiLock} type="password" placeholder="Senha Atual"/>
             <Input icon={FiLock} type="password" placeholder="Nova Senha"/>
-            <Button />
+            
+            <Button title="Salvar"/>
          </Form>
       </Container>
    );

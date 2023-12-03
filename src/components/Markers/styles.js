@@ -18,6 +18,7 @@ export const Container = styled.div`
 
    > input {
       width: 100%;
+      max-width: 15rem;
       height: 5.6rem;
       padding-left: 1.6rem;
 
