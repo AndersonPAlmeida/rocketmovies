@@ -3,6 +3,7 @@ import { AddMovie, Container, Title, Content } from "./styles";
 import { NewResume } from "../../components/NewResume";
 import { FiPlus} from 'react-icons/fi'
 import { MdOutlineStar, MdOutlineStarBorder  } from "react-icons/md";
+import { Link } from 'react-router-dom';
 
 export function Home() {
    return (
@@ -11,14 +12,16 @@ export function Home() {
 
          <Title>
             <h2>Meus Filmes</h2>
-            <AddMovie>
+            <AddMovie to="/create-movie">
                <FiPlus />
                Adicionar Filme
             </AddMovie>
          </Title>
 
          <Content>
-            <NewResume title="Interestellar"
+            <NewResume 
+               title="Interestellar"
+               id="1"
                data={{
                   tags: 
                   [
@@ -26,7 +29,9 @@ export function Home() {
                      { id: '2', name:'Drama'},
                      { id: '3', name:'Familia'}
                   ]
-               }}>   
+               }}
+               
+            >   
                <div>
                   <MdOutlineStar />
                   <MdOutlineStar />
@@ -42,7 +47,9 @@ export function Home() {
                </p>
             </NewResume>
 
-            <NewResume title="Interestellar"
+            <NewResume 
+               title="Interestellar"
+               id="2"
                data={{
                   tags: 
                   [
@@ -50,7 +57,8 @@ export function Home() {
                      { id: '2', name:'Drama'},
                      { id: '3', name:'Familia'}
                   ]
-               }}>   
+               }}
+            >   
                <div>
                   <MdOutlineStar />
                   <MdOutlineStar />
@@ -66,7 +74,9 @@ export function Home() {
                </p>
             </NewResume>
 
-            <NewResume title="Interestellar"
+            <NewResume 
+               title="Interestellar"
+               id="3"
                data={{
                   tags: 
                   [
@@ -74,7 +84,8 @@ export function Home() {
                      { id: '2', name:'Drama'},
                      { id: '3', name:'Familia'}
                   ]
-               }}>   
+               }}
+            >   
                <div>
                   <MdOutlineStar />
                   <MdOutlineStar />
@@ -90,7 +101,9 @@ export function Home() {
                </p>
             </NewResume>
             
-            <NewResume title="Interestellar"
+            <NewResume 
+               title="Interestellar"
+               id="4"
                data={{
                   tags: 
                   [
@@ -98,7 +111,8 @@ export function Home() {
                      { id: '2', name:'Drama'},
                      { id: '3', name:'Familia'}
                   ]
-               }}>   
+               }}
+            >   
                <div>
                   <MdOutlineStar />
                   <MdOutlineStar />

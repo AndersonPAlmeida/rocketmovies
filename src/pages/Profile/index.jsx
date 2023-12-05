@@ -3,12 +3,15 @@ import { ButtonText } from '../../components/ButtonText';
 import { Button } from '../../components/Button'
 import { Input } from '../../components/Input'
 import { FiUser, FiMail, FiLock, FiCamera} from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 
 export function Profile(){
    return (
       <Container>
          <header>
-            <ButtonText title="Voltar"/>
+            <Link to="/">
+               <ButtonText title="Voltar"/>
+            </Link>
          </header>
          <Form>
             <Avatar>
@@ -21,13 +24,15 @@ export function Profile(){
                </label>
             </Avatar>
 
-            <Input icon={FiUser} type="text" placeholder="Nome Completo"/>
-            <Input icon={FiMail} type="email" placeholder="Seu E-mail"/>
+            <Input icon={FiUser} type="text" placeholder="Nome Completo" value="Anderson Almeida"/>
+            <Input icon={FiMail} type="email" placeholder="Seu E-mail" value="anderson@gmail.com"/>
 
             <Input icon={FiLock} type="password" placeholder="Senha Atual"/>
             <Input icon={FiLock} type="password" placeholder="Nova Senha"/>
             
-            <Button title="Salvar"/>
+            <Link to="/">
+               <Button title="Salvar"/>
+            </Link>
          </Form>
       </Container>
    );

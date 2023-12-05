@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const Container = styled.div`
    width: 100%;
@@ -30,7 +31,7 @@ export const Title = styled.div`
 `;
 
 
-export const AddMovie = styled.button`
+export const AddMovie = styled(Link)`
    grid-area: movies;
 
    display: flex;
@@ -42,7 +43,7 @@ export const AddMovie = styled.button`
    border-radius: .8rem;
 
    background-color: ${({ theme}) => theme.colors.pinkLight};
-
+   color: ${({theme}) => theme.colors.backgroundTags};
    > svg{
       margin-right: 1.6rem;
    }

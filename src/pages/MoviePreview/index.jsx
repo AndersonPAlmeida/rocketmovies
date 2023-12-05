@@ -6,6 +6,7 @@ import { Tag } from '../../components/Tag';
 
 import { FiClock } from 'react-icons/fi';
 import { MdOutlineStar, MdOutlineStarBorder  } from "react-icons/md";
+import { Link } from 'react-router-dom';
 
 export function MoviePreview(){
    return(
@@ -13,7 +14,9 @@ export function MoviePreview(){
          <Header />
          <Content>
             <Description>
-               <ButtonText title="Voltar"/>
+               <Link to="/">
+                  <ButtonText title="Voltar"/>
+               </Link>
 
                <h2>
                   Interestellar

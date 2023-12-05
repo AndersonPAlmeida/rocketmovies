@@ -1,8 +1,8 @@
 import { Container } from './styles';
 import { Tag } from '../Tag';
-export function NewResume({title, data, children}){
+export function NewResume({title, id,data, children}){
    return (
-      <Container>
+      <Container to={`/movie/${id}`}>
          <h2>{title}</h2>
          {children}
 

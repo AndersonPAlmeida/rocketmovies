@@ -11,7 +11,7 @@ export function CreateMovie(){
    return(
       <Container>
          <Header /> 
-         <Prev>
+         <Prev to="/">
             <ButtonText title="Voltar"/>
          </Prev> 
 

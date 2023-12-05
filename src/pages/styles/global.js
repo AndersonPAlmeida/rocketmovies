@@ -26,6 +26,7 @@ export default createGlobalStyle`
 
    a {
       text-decoration: none;
+      color: ${({ theme}) => theme.colors.white};
    }
 
    button {
